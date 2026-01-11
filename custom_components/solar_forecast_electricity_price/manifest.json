@@ -1,0 +1,16 @@
+{
+  "domain": "solar_forecast_electricity_price",
+  "name": "Solar Forecast Electricity Price",
+  "codeowners": [
+    "@forsberg"
+  ],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://www.home-assistant.io/integrations/solar_forecast_electricity_price",
+  "homekit": {},
+  "iot_class": "local_push",
+  "requirements": [],
+  "ssdp": [],
+  "zeroconf": [],
+  "version":"0.1"
+}
