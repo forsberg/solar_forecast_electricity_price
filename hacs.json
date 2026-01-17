@@ -2,5 +2,6 @@
     "name": "Solar Forecast Electricity Price",
     "zip_release": true,
     "filename": "solar_forecast_electricity_price.zip",
-    "render_readme": true
+    "render_readme": true,
+    "homeassistant":"2025.8.0"
 }
