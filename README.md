@@ -211,12 +211,22 @@ template:
 
 ## Limitations
 
+### One load only
+
 Using this integration will only take into account one planned load. If there are multiple loads
 that can be planned, something like [EMHASS](https://emhass.readthedocs.io/en/latest/) or [EMHASS EV Add On](https://github.com/tomvanacker85/emhass-ev-add-on) (or a combination) may be a better solution. 
 
 The aim of this integraiton is to make it at least semi-easy to make EV Smart Charging (which is already a
 very nice integration) also take solar into account.
 
+### Solar Forecast Accuracy
+
 Obviously, the calculations made by this integration will only ever be as good as the quality of the forecast.
 Some days, the forecast will be wrong, but as long as it's at least roughly correct, the total cost
 of running the load over time should decrease by using this integration.
+
+### Price Sensor/Solar Forecast granularity
+
+The integration have only been tested with [Forecast.solar](https://www.home-assistant.io/integrations/forecast_solar/) integration without subscription, i.e with hourly forecasts, in combination with 15m price
+sensor. Other combinations of time granularity for solar forecast and prices may not work. Feel free to open
+issues if this is the case.
