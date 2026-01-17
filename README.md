@@ -84,10 +84,6 @@ with [forecast.solar](https://www.home-assistant.io/integrations/forecast_solar/
 but should work with any solar forecast that shows up correctly in the energy 
 integration dashboard.
 
-Obviously, the calculations made by this integration will only ever be as good as the quality of the forecast.
-Some days, the forecast will be wrong, but as long as it's at least roughly correct, the total cost
-of running the load over time should decrease by using this integration.
-
 ### Price Sensors for Cost of Import and Income of Export
 
 In order to calculate the true cost of running the load (i.e charge the car) by combining solar and
@@ -212,3 +208,15 @@ template:
 
 
 ```
+
+## Limitations
+
+Using this integration will only take into account one planned load. If there are multiple loads
+that can be planned, something like [EMHASS](https://emhass.readthedocs.io/en/latest/) or [EMHASS EV Add On](https://github.com/tomvanacker85/emhass-ev-add-on) (or a combination) may be a better solution. 
+
+The aim of this integraiton is to make it at least semi-easy to make EV Smart Charging (which is already a
+very nice integration) also take solar into account.
+
+Obviously, the calculations made by this integration will only ever be as good as the quality of the forecast.
+Some days, the forecast will be wrong, but as long as it's at least roughly correct, the total cost
+of running the load over time should decrease by using this integration.
